@@ -42,13 +42,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* <header>
-          <Navbar />
-        </header> */}
         <main className="bg-white px-10">
           {children}
         </main>
-        <footer className="border-t py-3 text-center text-xs text-slate-500">Copyright 2024</footer>
+        <footer className="py-3 text-center text-slate-500 text-2xl">Copyright 2024</footer>
       </body>
     </html>
   );
