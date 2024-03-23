@@ -17,14 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className} >
-      <body className="flex flex-col bg-orange-50 min-h-screen">
+      <body className="flex flex-col bg-white min-h-screen">
         <header>
           <Navbar />
         </header>
         <main className="grow py-3">
           {children}
         </main>
-        <footer className="border-t py-3 text-center text-xs text-slate-500">Copyright 2024</footer>
+        <footer className="py-3 text-center text-xs text-slate-500 text-2xl">Copyright 2024</footer>
       </body>
     </html>
   );
