@@ -45,7 +45,7 @@ export default function RootLayout({
         <main className="bg-white px-10">
           {children}
         </main>
-        <footer className="py-3 text-center text-slate-500 text-2xl">Copyright 2024</footer>
+        <footer className="py-3 mt-24 text-center text-slate-500 text-2xl font-[title]">Copyright 2024</footer>
       </body>
     </html>
   );
