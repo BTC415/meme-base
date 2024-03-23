@@ -18,16 +18,51 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  font-family: "wfont_bd5b84_69c6957bcfc6496a937e8fe4c42107d5, wf_69c6957bcfc6496a937e8fe4c, orig_kindergarten_cam"!important;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background-color: white;
+}
+
+@font-face {
+  font-family: "text";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url('../public/fonts/text.woff2') format("woff2");
+}
+@font-face {
+  font-family: "title";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url('../public/fonts/title.woff2') format("woff2");
+}
+@font-face {
+  font-family: "ugly";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url('../public/fonts/ugly.woff2') format("woff2");
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f3ecec;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6d8;
+  border-radius: 4px;
 }

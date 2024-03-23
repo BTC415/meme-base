@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meme",
@@ -16,12 +16,36 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className} >
-      <body className="flex flex-col bg-orange-50 min-h-screen">
-        <header>
+    <html lang="en">
+    {/* <html lang="en" className={inter.className} > */}
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/text.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/title.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/ugly.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body>
+        {/* <header>
           <Navbar />
-        </header>
-        <main className="grow py-3">
+        </header> */}
+        <main className="bg-white px-10">
           {children}
         </main>
         <footer className="border-t py-3 text-center text-xs text-slate-500">Copyright 2024</footer>
