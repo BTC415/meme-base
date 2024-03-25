@@ -33,21 +33,31 @@ body {
   font-style: normal;
   font-weight: 100 900;
   font-display: optional;
-  src: url('../public/fonts/text.woff2') format("woff2");
+  src: url('../assets/fonts/text.woff2') format("woff2");
 }
 @font-face {
   font-family: "title";
   font-style: normal;
   font-weight: 100 900;
   font-display: optional;
-  src: url('../public/fonts/title.woff2') format("woff2");
+  src: url('../assets/fonts/title.woff2') format("woff2");
 }
 @font-face {
   font-family: "ugly";
   font-style: normal;
   font-weight: 100 900;
   font-display: optional;
-  src: url('../public/fonts/ugly.woff2') format("woff2");
+  src: url('../assets/fonts/ugly.woff2') format("woff2");
+}
+
+.title{
+  font-family: title;
+}
+.text{
+  font-family: text;
+}
+.ugly{
+  font-family: ugly;
 }
 
 @layer utilities {
@@ -65,4 +75,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #c6c6d8;
   border-radius: 4px;
+}
+
+.apexcharts-canvas{
+  width: 100%;
 }
